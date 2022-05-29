@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order-success</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order-success.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <img src="assets/logo.png"></a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="Search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- closer btn  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/light1.jpg" alt="">
+        <div class="content">
+            <h3>Modern Lamp</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $1430.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/chair1.png" alt="">
+        <div class="content">
+            <h3>Artist Chair</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $580.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="/assets/images/populer-products/sofa2.png" alt="">
+        <div class="content">
+            <h3>Leather Sofa</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $2520.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/table1.jpg" alt="">
+        <div class="content">
+            <h3>Designer Table</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $1890.00 </span>
+        </div>
+    </div>
+
+    <h3 class="total"> Total : <span>$6420.00</span> </h3>
+
+    <a href="checkout.html" class="btn">Checkout Cart</a>
+
+</div>
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>Login form</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="Remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>Forget password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Create now</a></p>
+    </form>
+
+</div>
+
+<br>
+<br>
+<br>
+  
+
+<!--Order Success Section starts-->
+
+<section class="order">
+    <div class="form-container">
+        <form class="back"> 
+            <input type="button" value="<< Back"
+            onclick="history.go(-1)">
+        </form>
+    </div>
+
+    <div class="break">
+
+    </div>
+
+    <div class="order-success">
+        <h1 class="success"> Order Confirmed!</h1>
+        <a href="shop.html" class="shop-btn">Continue Shopping</a>
+    </div>
+
+    <div class="success-note">
+        <p>
+            Thank you for shopping with us. We are currently 
+            processing your order. Once the order has been 
+            processed, your order will be dispatched in 3-7 
+            business days.
+        </p>
+        <br>
+        <br>
+        <p>
+            Please see our FAQ sheets for more details regarding returns and exchanges.
+            If you do have any questions regarding your order, please contact 
+            +61 08 6377 7273 or kindly send us an email at 
+            perthfurniturewarehouse@gmail.com.
+        </p>
+        <br>
+        <br>   
+        <br>
+        <br> 
+        <span><p> Until then, keep browsing! </p></span>
+
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Address</h3>
+            <a href="#"> 20 Watt Link, Forrestdale 6112 </a>
+            <a href="#"> +61 08 6377 7273</a>
+            <a href="#"> perthfurniturewarehouse@gmail.com</a>
+
+        </div>
+        
+        <div class="box">
+            <h3>Services</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Help & Support</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> FAQ</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Pricing</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> Blog</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> About</a>
+        </div>
+
+        <div class="box">
+            <h3>Socials</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> Pinterest</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Hear about our latest updates</p>
+            <form action="">
+                <input type="Email" name="" placeholder="Enter your email" id="">
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    

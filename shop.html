@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/7ee5ce7b9e.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <img src="assets/logo.png"></a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="Search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- closer btn  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/light1.jpg" alt="">
+        <div class="content">
+            <h3>Modern Lamp</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $1430.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/chair1.png" alt="">
+        <div class="content">
+            <h3>Artist Chair</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $580.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/sofa2.png" alt="">
+        <div class="content">
+            <h3>Leather Sofa</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $2520.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/images/populer-products/table1.jpg" alt="">
+        <div class="content">
+            <h3>Designer Table</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $1890.00 </span>
+        </div>
+    </div>
+
+    <h3 class="total"> Total : <span>$6420.00</span> </h3>
+
+    <a href="checkout.html" class="btn">Checkout Cart</a>
+
+</div>
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>Login Form</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="Remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <input type="submit" value="Login Now" class="btn">
+        <p>Forget password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Create now</a></p>
+    </form>
+
+</div>
+
+<!-- Category Start -->
+
+<section class="category">
+
+    <h1 class="title"> <span>Our Categories</span> <a href="#">View All >></a> </h1>
+    <p>Art is ingrained into the design of the collection. Harmony in design is achieved when elements work together cohesively and aesthetically. Discover how different types of lines can influence interior design and the perception of space.</p>
+    <br>
+    <br>
+    <br>
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="image/icon-6.png" alt="">
+            <h3>All Products</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="image/icon-1.png" alt="">
+            <h3>House Sofa</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/icon-2.png" alt="">
+            <h3>Working Table</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/icon-3.png" alt="">
+            <h3>Corner Table</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/icon-4.png" alt="">
+            <h3>Office Chair</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/icon-5.png" alt="">
+            <h3>New Wardrobe</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="products">
+
+    <h1 class="title"> <span>Shop All</span> <a href="#">View all >></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/bed1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$1400.00</div>
+                <a href="product-detail.html"><h3>Designer Bed</h3></a>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (38) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/chair1.png" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$580.00</div>
+                <h3>Artist Chair</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/light1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$1430.00</div>
+                <h3>Modern Lamp</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/sofa1.png" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$2140.00</div>
+                <h3>Modern Sofa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/sofa2.png" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$2520.00</div>
+                <h3>Leather Sofa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/table1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$1890.00</div>
+                <h3>Designer Table</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/chair4.png" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$740.00</div>
+                <h3>Comfy Chair</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="assets/images/populer-products/chair3.png" alt="">
+            </div>
+            <div class="content">
+                <div class="price">$540.00</div>
+                <h3>Velvet Chair</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (50) </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Address</h3>
+            <a href="#"> 20 Watt Link, Forrestdale 6112 </a>
+            <a href="#"> +61 08 6377 7273</a>
+            <a href="#"> perthfurniturewarehouse@gmail.com</a>
+
+        </div>
+        
+        <div class="box">
+            <h3>Services</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Help & Support</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> FAQ</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Pricing</a>
+            <a href="/blog.html"> <i class="fas fa-arrow-right"></i> Blog</a>
+            <a href="/#"> <i class="fas fa-arrow-right"></i> About</a>
+        </div>
+
+        <div class="box">
+            <h3>Socials</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> Pinterest</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form action="">
+                <input type="Email" name="" placeholder="Enter your email" id="">
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    
+</body>
+</html>
