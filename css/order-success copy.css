@@ -1,16 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 
-.order section{
-    margin: 2rem;
-    padding: 2rem;
+.order{
+    display: flex;
+    flex-direction: row;
+    box-align:space-between;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    
 }
+
+
+.order-success{
+    padding-top: 5rem;
+    padding-right: 5rem;
+}     
 
 .order-success h1{
     font-family: dream;
     font-size: 5rem;
     color:#3a4731;
-    padding-bottom: 3rem;
+}
+
+.success-note{
+    margin: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3rem;
 }
 
 .success-note span{
@@ -22,12 +38,13 @@
     font-size: 1.5rem;
     font-family: 'Poppins';
     color:#3a4731;
-    padding-right: 20%;
-    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 
 .shop-btn{
+    position: relative;
+    top: 14rem;
     background-color:rgb(181 119 76);
     border-radius: 3rem;
     font-family: 'Poppins';
@@ -44,6 +61,8 @@
 }
 
 input[type="button"]{
+    position: relative;
+    top: -5rem;
     color: rgb(100 99 79);
     background-color: #fff;
     font-weight: 500;
@@ -52,6 +71,7 @@ input[type="button"]{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding-left: 5rem;
 }
 
 input[type="button"]:hover{
@@ -59,21 +79,26 @@ input[type="button"]:hover{
 }
 
 hr{
-    padding-bottom: 5rem;
+    padding-bottom: 20%;
 }
 
 
 @media (max-width: 991px) {
-    section {
-      padding: 3rem 2rem;
+    h1{
+        padding: 18px 4%;
     }
+    section{
+        padding: 50px 4%;
+    }
+}
 
-    .shop-btn{
-        font-size: 1.5rem;
-        padding: 1.5rem;
+@media (max-width: 881px) {
+    .home-text h1{
+        font-size: 2rem;
     }
+    .shop-container,
+    .new-container {
+        grid-template-columns: repeat(auto-fit, minmax(218px, auto));
 
-    input[type="button"]{
-        font-size: 1.5rem;
     }
-  }
+}

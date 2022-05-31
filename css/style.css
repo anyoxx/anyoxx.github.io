@@ -786,6 +786,11 @@ section {
   section {
     padding: 3rem 2rem;
   }
+
+  .logo{
+    max-width: 0%;
+    max-height: 0%;
+  }
 }
 
 @media (max-width: 768px) {
