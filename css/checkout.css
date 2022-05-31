@@ -1,66 +1,124 @@
 *{
-    margin: 0px;
-    padding: 0;
     box-sizing: border-box;
     transition: 0.5s;
 }
 
-input [type= "button"] span{
-    background-color: none;
+.checkout-row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px -16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+  
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    color: #6f766f;
+}
+
+.order-summary{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.checkout-row h3{
+    font-size: 3rem;
+    font-weight: 800;
     color: #3a473a;
-    font-weight: 500;
-    font-size: 18px;
-    height: 50px;
-    padding: 0 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding-bottom: 2rem;
+    font-family: dream;
+}
+  
+h4{
+    font-family: dream;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #3a473a;
+
+}
+  
+.order-summary a{
+    color: #3a473a;
+    font-size: 2rem;
+}
+  
+hr {
+    border: 1px solid lightgrey;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+  
+span.price {
+    float: right;
+    color: #6f766f;
+    font-size: 1.5rem;
 }
 
-.form-container{
-    width: 60%;
-    margin-top: 6rem;
-    display:flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    transform: translate(35%, 0);
-    padding: 10px;
+span.final-price{
+    float:right;
+    color: #3a473a;
+    font-size: 2rem;
 }
 
-.progress-checkout-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    transform:(40%, 0);
+span.icon{
+    float: right;
+    color: #3a473a;
+    font-size: 2rem;
+}
+  
+h5{
+  font-family: cochin;
+  font-size: 2rem;
+  color: #3a473a;
+}
+  
+
+h6{
+  font-family: cochin;
+  font-size: 1.5rem;
+  color: #6f766f;
+  line-height: 2.5rem;
 }
 
-
-
-.form-title{
-    font-size: 36px;
-    margin-bottom: 2.5rem;
-    font-weight: 500;
-    opacity: 0.8;
-    color: #453e30;
-}
-
-.checkout-form{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-}
-
-.input-line{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    width: 100%;
-}
 
 label{
     font-size: 16px;
@@ -85,23 +143,6 @@ input[type="text"]::placeholder{
     color: #81857d;
 }
 
-.input-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.input-container .input-line{
-    width: 45%;
-}
-
-
-.checkout-process .btn{
-    border-radius: 1.5rem;
-    padding: 2rem;
-}
-
 .btn {
     color: rgb(178 162 139);
     background-color: #fff;
@@ -116,62 +157,13 @@ input[type="text"]::placeholder{
     font-size: 17px;
   }
   
-.row {
-    display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-  .col-25 {
-    -ms-flex: 25%;
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; 
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%;
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 16px 16px;
-  }
-  
-  .container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
-  
- h4{
-     font-family: cochin;
+/*Responsive*/
 
- }
-  
-  a {
-    color: #2196F3;
+@media (max-width: 800px) {
+  .checkout-row {
+    flex-direction: column-reverse;
   }
-  
-  hr {
-    border: 1px solid lightgrey;
+  .col-25 {
+    margin-bottom: 20px;
   }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }
-  
-  
+}

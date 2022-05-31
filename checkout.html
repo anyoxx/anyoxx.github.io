@@ -127,17 +127,19 @@
 
 </div>
 
-<div class="row">
+<!--Checkout-->
+
+<div class="checkout-row">
     <div class="col-75">
       <div class="container">
         <form action="order-success.html">
         
-          <div class="row">
+          <div class="checkout-row">
             <div class="col-50">
 
 <!--Billing Address-->
 
-              <h3>Billing Address</h3>
+              <h3>Shipping Address</h3>
               <label for="fname"><i class="fa fa-user"></i> Full Name</label>
               <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
               <label for="email"><i class="fa fa-envelope"></i> Email</label>
@@ -147,7 +149,7 @@
               <label for="city"><i class="fa fa-institution"></i> City</label>
               <input type="text" id="city" name="city" placeholder="New York">
   
-              <div class="row">
+              <div class="checkout-row">
                 <div class="col-50">
                   <label for="state">State</label>
                   <input type="text" id="state" name="state" placeholder="NY">
@@ -164,10 +166,10 @@
               <h3>Payment</h3>
               <label for="fname">Accepted Cards</label>
               <div class="icon-container">
-                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-amex"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-discover"></i>
               </div>
               <label for="cname">Name on Card</label>
               <input type="text" id="cname" name="cardname" placeholder="John More Doe">
@@ -175,7 +177,7 @@
               <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
               <label for="expmonth">Exp Month</label>
               <input type="text" id="expmonth" name="expmonth" placeholder="September">
-              <div class="row">
+              <div class="checkout-row">
                 <div class="col-50">
                   <label for="expyear">Exp Year</label>
                   <input type="text" id="expyear" name="expyear" placeholder="2018">
@@ -189,7 +191,7 @@
             
           </div>
           <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            <input type="checkbox" checked="checked" name="sameadr"> Billing address same as shipping
           </label>
           <input type="submit" value="Continue to checkout" class="btn">
         </form>
@@ -198,14 +200,21 @@
 
     <!--Order Summary cart-->
     <div class="col-25">
-      <div class="container">
-        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <div class="order-summary">
+        <h4>Cart <span class="icon"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <p><a href="#">Designer Bed</a> <span class="price">$1,400</span></p>
+        <br>
+        <p><a href="#">Artist Chair</a> <span class="price">$580</span></p>
+        <br>
+        <p><a href="#">Modern Lamp</a> <span class="price">$1,430</span></p>
+        <br>
+        <p><a href="#">Leather Sofa</a> <span class="price">$2,520</span></p>
         <hr>
-        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+        <h6>Subtotal<span class="price"><b>$5,930.00</b></span></h6>
+        <h6>Tax (5%) <span class="price"><b>$296.50</b></span></h6>
+        <h6>Shipping<span class="price"><b>$200.00</b></span></h6>
+        <hr>
+        <h5>Total <span class="final-price"><b>$6,399.50</b></span></h4>
       </div>
     </div>
   </div>
