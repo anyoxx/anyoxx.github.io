@@ -39,8 +39,9 @@
     padding: 10px 14px;
     background-color: rgb(181 119 76);
     color: #fff;
-    border-radius: 0.3rem;
+    border-radius: 1rem;
     font-size: 14px;
+    font-family: 'Poppins';
 }
 
 .btn:hover{
@@ -318,7 +319,7 @@
 
 @media (max-width: 491px) {
     .home-text h1{
-        font-size: 1.7rem;
+        font-size: 5rem;
     }
     
     .shop-container,

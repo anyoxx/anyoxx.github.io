@@ -718,12 +718,6 @@ section {
 }
 
 
-/*Checkout forms*/
-
-
-
-
-
 /*Footer*/
 
 .footer {
@@ -791,14 +785,6 @@ section {
   }
   section {
     padding: 3rem 2rem;
-  }
-  .home #slide-next,
-  .home #slide-prev {
-    top: 95%;
-  }
-  .home #slide-prev {
-    left: auto;
-    right: 8rem;
   }
 }
 
