@@ -1,4 +1,5 @@
  /*Homepage*/
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
  
 .home{
     width: 100%;
@@ -48,6 +49,24 @@
     background: rgb(106, 69, 43);
 }
 
+/*search button*/
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+
 /*Content*/
 
 .heading h2{
@@ -57,6 +76,16 @@
     font-family: dream;
 }
 
+.shop .heading a{
+    text-align: right;
+    text-decoration: none;
+    color: #3a4731;
+    font-size: 1.5rem;
+}
+
+.shop .heading a:hover{
+    text-decoration: underline;
+}
 
 .shop-container, .new-container{
     display: grid;
@@ -121,7 +150,7 @@
      color: #3a4731;
  }
 
- .box .fa-shopping-cart{
+ .box .heart{
      position: absolute;
      top: 11px;
      right: 9px;
@@ -131,9 +160,15 @@
      border-radius: 4px 0 4px 0;
  }
 
- .box .fa-shopping-cart:hover{
+ .box .heart:hover{
      color: rgb(181 119 76);
  }
+
+ .box .heart:checked{
+     color: rgb(151, 92, 50);
+ }
+
+
 
  .new-container .box{
      border-radius: 4px;
@@ -209,6 +244,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
+    background-color:#ddd1c2;
 
 }
 

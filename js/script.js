@@ -1,3 +1,5 @@
+//animations//
+
 let closer = document.querySelector('#closer');
 
 closer.onclick = () =>{
@@ -52,18 +54,7 @@ function prev(){
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
 }
-
-$(document).ready(function() {
-
-    $('.color-choose input').on('click', function() {
-        var headphonesColor = $(this).attr('data-image');
-  
-        $('.active').removeClass('active');
-        $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
-        $(this).addClass('active');
-    });
-  
-  });
+//overlay function//
   
 function on() {
     document.getElementById("overlay").style.display = "block";
@@ -71,4 +62,13 @@ function on() {
   
 function off() {
     document.getElementById("overlay").style.display = "none";
+}
+
+//validate login form//
+function validateForm() {
+    var x = document.forms["login"]["email"]["password"].value;
+    if (x == "" || x == null) {
+      alert("Email must be filled out");
+      return false;
+    }
 }
