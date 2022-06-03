@@ -6,67 +6,112 @@ html, body {
     width: 100%;
     margin: 0;
   }
-  
- .container {
-    max-width: 1200px;
-    max-height: max-content;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-    overflow: hidden;
-  }
+ /*breadcrumb*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  padding-left: 5rem;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: #3a4731;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #3a4731;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #86939E;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #3a4731;
+  text-decoration: underline;
+} 
+
 
   /* Columns */
-  .left-column {
-    width: 65%;
-    position: relative;
+
+.container {  
+    max-width: 1200px;
+    max-height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "product-imgs product-description";  
+}  
+  
+  .product-imgs { 
+    grid-area: product-imgs;
+    margin: 2rem; 
   }
   
-  .right-column {
-    width: 35%;
-    margin-top: 60px;
+  .product-description { 
+    grid-area: product-description; 
   }
   
-  
-  /* Left Column */
-  .left-column img {
+img{
     width: 90%;
-    position:absolute;
-    left: 25px;
-    top: -30%;
-    opacity: 0;
-    object-fit: cover;
-    transition: all 0.3s ease;
-  }
-  
-  .left-column img.active {
-    opacity: 1;
-  }
-  
-  
-  /* Right Column */
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 90%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 102%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
   
   /* Product Description */
+
+  .product-right{
+    padding-top: 16rem;
+    padding-left: 4rem;
+  }
   .product-description {
-    border-bottom: 1px solid #E1E8EE;
     margin-bottom: 20px;
   }
-  .product-description span {
-    font-size: 12px;
-    color: #358ED7;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+
   .product-description h1 {
     font-weight: 300;
     font-size: 52px;
     color: #3a4731;
-    letter-spacing: -2px;
-    padding-bottom: 2rem;
   }
   .product-description p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #86939E;
     line-height: 24px;
@@ -86,6 +131,11 @@ html, body {
   /* Product Color */
   .product-color {
     margin-bottom: 30px;
+  }
+
+  .color-choose{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   
   .color-choose div {
@@ -120,12 +170,7 @@ html, body {
   .color-choose input[type="radio"]#black + label span {
     background-color: #454538;
   }
-  
-  .color-choose input[type="radio"]:checked + label span {
-    background-image: url(images/check-icn.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+
   
   /* Product Price */
   .product-price {
@@ -134,11 +179,15 @@ html, body {
   }
   
   .product-price span {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 600;
     color: #3a4731;
     margin-right: 20px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
   }
+
+  /*product details*/
   
   .product-details{
       background-color: rgb(226 218 213);
@@ -146,22 +195,31 @@ html, body {
       display: grid;
       -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
           grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-      gap: 1.5rem;
+      gap: 3.5rem;
   }
 
   .product-details h3{
       font-family: dream;
       font-size: 3rem;
       font-weight: 100;
+      text-decoration: underline;
+      text-decoration-line: ;
       color: rgb(100 99 79);
   }
 
   .product-details p{
-      font-family: 'Poppins';
-      font-size: 1.3rem;
-      font-weight: 100;
-      color: rgb(100 99 79);
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(100 99 79);
   }
+
+.content li{
+  font-family: 'Poppins';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(100 99 79);
+}
 
   .product-about{
     width: 65%;
@@ -172,35 +230,63 @@ html, body {
     font-weight: 400;
   }
 
-  .product-text{
-      width: 35%;
+  /*product details collapsible menu*/
+
+.product-text{
       position: relative;
-  }
+}
 
 .product-text a{
     font-size: 1.4rem;
     color: rgb(100 99 79);
-    padding: 1rem 0;
+    padding: 0;
     display: block;
 }
 
-table, td {
-    border-top: 1px solid rgba(100, 99, 79, 0.75);
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    color: rgb(100 99 79);
-    padding: 1rem;
-    font-weight: 400;
+.product-text button{
+  border-radius: 0;
+  font-weight: 500;
 }
 
-td{
-    height: 30px;
+.collapsible {
+  background-color: rgb(226 218 213);
+  color: rgb(100 99 79);
+  cursor: pointer;
+  padding: 18px 18px 18px 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
-table{
-    width: 250%;
-    border-collapse: collapse;
+.active, .collapsible:hover {
+  background-color: #bbbaab74;
 }
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(100 99 79);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+/*back button*/
 
 input[type="button"]{
     color: rgb(100 99 79);
@@ -217,6 +303,8 @@ input[type="button"]{
 input[type="button"]:hover{
     text-decoration: underline;
 }
+
+/*overlay success message*/
 
 #overlay {
   position: fixed;
@@ -260,7 +348,33 @@ button:hover {
 
   /* Responsive */
   @media (max-width: 940px) {
-    .container {
+    .container{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "product-imgs"
+          "product-description";
+        max-height: max-content;
+      }
+      
+      .product-imgs { 
+        grid-area: product-imgs;
+       }
+      
+      .product-description {
+        grid-area: product-description; 
+      }
+
+      .product-right{
+        padding-top: 5rem;
+      }
+    
+    }
+
+      /*
       margin: 10px;
       display: grid;
       grid-template-columns: 5.3fr;
@@ -305,4 +419,4 @@ button:hover {
       overflow: hidden;
     }
   }
-  
+  */
