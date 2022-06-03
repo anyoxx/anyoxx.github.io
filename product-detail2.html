@@ -137,99 +137,143 @@
     </form>
 </div>
 
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Products</a></li>
+    <li>Artist Chair</li>
+</ul>
+
   
+<div class="container">
 
-<main class="container">
-    <!-- Left Column -->
-    <div class="left-column">
-      <img data-image="beige" class="active" src="image/populer-products/chair1.png" alt="">
+<!-- card left -->
+     <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                <img src = "image/populer-products/chair1.png" alt = "">
+                <img src = "image/populer-products/chair1-1.png" alt = "">
+                <img src = "image/populer-products/chair1-3.png" alt = "">
+                <img src = "image/populer-products/chair1-2.png" alt = "">
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img src = "image/populer-products/chair1.png" alt = "">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img src = "image/populer-products/chair1-1.png" alt = "">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img src = "image/populer-products/chair1-3.png" alt = "">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img src = "image/populer-products/chair1-2.png" alt = "">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card right -->
+   
+    <div class="product-description">
+        <div class="product-right">
+            <h1>Artist Chair</h1>
+                    <br>
+                    <br>
+                    <p>This lovely tufted accent chair brings a touch of glamour to the bedroom or living room.</p>
+                    <div class="product-price">
+                        <span>$580</span>
+                    </div>
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                    <div class="color-choose">
+                        <div>
+                        <input data-image="beige" type="radio" id="beige" name="color" value="beige" checked>
+                        <label for="beige"><span></span></label>
+                        </div>
+                        <div>
+                        <input data-image="grey" type="radio" id="grey" name="color" value="grey">
+                        <label for="grey"><span></span></label>
+                        </div>
+                        <div>
+                        <input data-image="black" type="radio" id="black" name="color" value="black">
+                        <label for="black"><span></span></label>
+                        </div>
+                    </div>  
+                    </div>
+            <!--Add to cart success message-->
+
+                    <div id="overlay" onclick="off()">
+                        <div id="text">Item added to cart!</div>
+                    </div>
+                    
+                    <div class="cart-btn">
+                        <button onclick="on()">Add to Cart</button>
+                    </div>
+        </div>   
     </div>
-    
-    <!-- Right Column -->
-    <div class="right-column">
+</div>
 
-      <!-- Product Description -->
-      <div class="product-description">
-        <h1>Artist Chair</h1>
-        <br>
-        <br>
-        <p>This lovely tufted accent chair brings a touch of glamour to the bedroom or living room.</p>
-        <div class="product-price">
-            <span>$580</span>
-        </div>
-        
-      </div>
-
-        <!-- Product Color -->
-        <div class="product-color">
-
-          <div class="color-choose">
-            <div>
-              <input data-image="beige" type="radio" id="beige" name="color" value="beige" checked>
-              <label for="beige"><span></span></label>
-            </div>
-            <div>
-              <input data-image="grey" type="radio" id="grey" name="color" value="grey">
-              <label for="grey"><span></span></label>
-            </div>
-            <div>
-              <input data-image="black" type="radio" id="black" name="color" value="black">
-              <label for="black"><span></span></label>
-            </div>
-          </div>
-
-        </div>
-<!--Add to cart success message-->
-
-        <div id="overlay" onclick="off()">
-            <div id="text">Item added to cart!</div>
-          </div>
-          
-          <div class="cart-btn">
-            <button onclick="on()">Add to Cart</button>
-          </div>
-
-      <!-- Product Pricing -->
-      <div class="product-price">
-      </div>
-    </div>
-  </main>
-  <br>
-  <br>
-  <br>
 
   <!--Product Details-->
   <section class="product-details">
 
-      <div class="product-about">
+    <div class="product-about">
         <h3>About</h3>
         <br>
         <br>
         <br>
         <p>This lovely tufted accent chair brings a touch of glamour to the bedroom or living room. The Brentwood Chair features full upholstery with studded detail and tapered feet. Solid Tasmanian Oak frame with Green Line Italian Pirelli webbing. Dunlop Enduro high grade polyurethane cushioning. Offered in an array of fine upholstery and timber stains to suit any decor.</p> 
-      </div>
+    </div>
       
-      <div class="product-text">
-        <h3>Details</h3>
-        <br>
-        <br>
-            <table>
-                <tr>
-                    <td>Specifications</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                </tr>
-                <tr>
-                    <td>Dimensions</td>
-                </tr>
-                <tr>
-                    <td>Individual Order</td>
-                </tr>
-            </table>
-      </div>
+    
+    <div class="product-text">
 
-  </div>
+        <h3>Details:</h3>
+
+        <button class="collapsible">Specifications</button>
+        <div class="content">
+          <p>For specific product dimensions, please refer to the diagram.</p>
+        </div>
+
+        <button class="collapsible">Dimensions</button>
+        <div class="content">
+          <p>W: 420mm x D: 540mm x H: 920mm
+            <br>
+            Weight: 18 kg</p>
+        </div>
+
+        <button class="collapsible">Care Instructions</button>
+        <div class="content">
+            <li>Wipe the tabletop with a diluted solution of mild detergent and warm water after each use.</li>
+            <li>Always clean the whole tabletop rather than one area, to avoid any patches of dis-coloration over time.</li>
+            <li>Always wipe up spills as soon as possible and dry with a soft cloth.</li>
+            <li>Avoid using any acidic or high alkaline based cleaners, or products containing bleach, ammonia, alcohol or petroleum.</li>
+            <li>Avoid furniture polish as over time it can accumulate and leave a residue.</li>
+            <li>Remove dust with a soft, dry, untreated cloth.</li>
+            <li>Always seek professional help if your furniture becomes stained, scratched, chipped or suffers damage.</li>
+            <li>Protect wood surfaces with felt under-cloths and place mats.</li>
+            <li>The colour of wood matures with exposure to light.</li>
+            <li>Any extendable dining tables should be left extended for the first few months to avoid uneven shading.</li>
+            <li>Do not place furniture near direct sources of heat or air conditioning units • Avoid changes in humidity - especially steam.</li>
+            <li>Protect furniture from strong or prolonged sunlight.</li>
+        </div>  
+
+        <button class="collapsible">Shipping</button>
+        <div class="content">
+          <p>Available in-store for pick-up. Delivery available for all orders over $3000. 
+            AVAILABILITY (SYDNEY METRO): 16 Weeks Lead Time
+          </p>
+        </div>       
+
+    </div>
 
   </section>
 

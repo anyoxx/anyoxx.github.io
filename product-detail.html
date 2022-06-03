@@ -137,66 +137,89 @@
     </form>
 </div>
 
-<main class="container">
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Products</a></li>
+    <li>Designer Bed</li>
+  </ul>
 
-    <!-- Left Column -->
-    <div class="left-column">
-      <img data-image="beige" class="active" src="image/populer-products/bed1.jpg" alt="">
-    </div>
+  <div class="container">
 
-
-    <!-- Right Column -->
-    <div class="right-column">
-
-      <!-- Product Description -->
-      <div class="product-description">
-        <h1>Designer Bed</h1>
-        <br>
-        <br>
-        <p>The Atelier is a statement piece that channels modern Parisian apartment aesthetic with curved form and rounded silhouette.</p>
-        <div class="product-price">
-            <span>$1400</span>
+    <!-- card left -->
+         <div class = "product-imgs">
+                <div class = "img-display">
+                  <div class = "img-showcase">
+                    <img src = "image/populer-products/bed1-2.png" alt = "">
+                    <img src = "image/populer-products/bed1-1.png" alt = "">
+                    <img src = "image/populer-products/bed1-3.png" alt = "">
+                    <img src = "image/populer-products/bed1.png" alt = "">
+                  </div>
+                </div>
+                <div class = "img-select">
+                  <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                      <img src = "image/populer-products/bed1-2.png" alt = "">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "2">
+                      <img src = "image/populer-products/bed1-1.png" alt = "">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "3">
+                      <img src = "image/populer-products/bed1-3.png" alt = "">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "4">
+                      <img src = "image/populer-products/bed1.png" alt = "">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card right -->
+       
+        <div class="product-description">
+            <div class="product-right">
+                <h1>Designer Bed</h1>
+                        <br>
+                        <br>
+                        <p>The Atelier is a statement piece that channels modern Parisian apartment aesthetic with curved form and rounded silhouette. </p>
+                        <div class="product-price">
+                            <span>$1400</span>
+                        </div>
+    
+                        <!-- Product Color -->
+                        <div class="product-color">
+                        <div class="color-choose">
+                            <div>
+                            <input data-image="beige" type="radio" id="beige" name="color" value="beige" checked>
+                            <label for="beige"><span></span></label>
+                            </div>
+                            <div>
+                            <input data-image="grey" type="radio" id="grey" name="color" value="grey">
+                            <label for="grey"><span></span></label>
+                            </div>
+                            <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                            </div>
+                        </div>  
+                        </div>
+                <!--Add to cart success message-->
+    
+                        <div id="overlay" onclick="off()">
+                            <div id="text">Item added to cart!</div>
+                        </div>
+                        
+                        <div class="cart-btn">
+                            <button onclick="on()">Add to Cart</button>
+                        </div>
+            </div>   
         </div>
-        
-      </div>
-
-        <!-- Product Color -->
-        <div class="product-color">
-
-          <div class="color-choose">
-            <div>
-              <input data-image="beige" type="radio" id="beige" name="color" value="beige" checked>
-              <label for="beige"><span></span></label>
-            </div>
-            <div>
-              <input data-image="grey" type="radio" id="grey" name="color" value="grey">
-              <label for="grey"><span></span></label>
-            </div>
-            <div>
-              <input data-image="black" type="radio" id="black" name="color" value="black">
-              <label for="black"><span></span></label>
-            </div>
-          </div>
-
-        </div>
-<!--Add to cart success message-->
-
-        <div id="overlay" onclick="off()">
-            <div id="text">Item added to cart!</div>
-          </div>
-          
-          <div class="cart-btn">
-            <button onclick="on()">Add to Cart</button>
-          </div>
-
-      <!-- Product Pricing -->
-      <div class="product-price">
-      </div>
     </div>
-  </main>
-  <br>
-  <br>
-  <br>
+    
 
   <!--Product Details-->
   <section class="product-details">
@@ -209,27 +232,37 @@
         <p>The Atelier is a statement piece that channels modern Parisian apartment aesthetic with curved form and rounded silhouette. This piece boasts a refined allure that combines a contemporary shape with a romantic feminine flair. The generous seat with plush cushioning and the elegant curve of its backrest creates an aesthetic that is generous, yet light.</p> 
       </div>
       
-      <div class="product-text">
-        <h3>Details</h3>
-        <br>
-        <br>
-            <table>
-                <tr>
-                    <td>Specifications</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                </tr>
-                <tr>
-                    <td>Dimensions</td>
-                </tr>
-                <tr>
-                    <td>Individual Order</td>
-                </tr>
-            </table>
-      </div>
+    <div class="product-text">
 
-  </div>
+        <h3>Details:</h3>
+
+        <button class="collapsible">Specifications</button>
+        <div class="content">
+          <p>For specific product dimensions, please refer to the diagram.</p>
+        </div>
+
+        <button class="collapsible">Dimensions</button>
+        <div class="content">
+          <p>W: 2080mm x D: 2500mm x H: 950mm</p>
+        </div>
+
+        <button class="collapsible">Care Instructions</button>
+        <div class="content">
+            <li>Always follow the manufacturer’s directions.</li>
+            <li>Spot clean using a mild detergent and water cleaning stitch to stich to avoid water marks.</li>
+            <li>Do not saturate with liquid.</li>
+            <li>Clean with covers on. We strongly recommend cleaning is done without removing the slipcovers as fabric shrinkage may occur, making it difficult to fit the slipcovers back on the furniture.</li>
+            <li>We recommend consulting a reputable and recognised professional upholstery specialist if required.</li>
+        </div>  
+
+        <button class="collapsible">Shipping</button>
+        <div class="content">
+          <p>Available in-store for pick-up. Delivery available for all orders over $3000. 
+            AVAILABILITY (SYDNEY METRO): 16 Weeks Lead Time
+          </p>
+        </div>       
+
+    </div>
 
   </section>
 
