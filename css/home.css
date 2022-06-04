@@ -448,7 +448,7 @@
 
     .home{
         background-image: url(/image/collection/mobile.jpg);
-        background-size: cover;
+        background-size: 500px;
     }
 }
 
