@@ -55,7 +55,7 @@ ul.breadcrumb li a:hover {
   
   .product-imgs { 
     grid-area: product-imgs;
-    margin: 2rem; 
+    margin: 2.5rem; 
   }
   
   .product-description { 
@@ -98,8 +98,7 @@ img{
   /* Product Description */
 
   .product-right{
-    padding-top: 16rem;
-    padding-left: 4rem;
+    padding: 16rem 4rem 0 4rem;
   }
   .product-description {
     margin-bottom: 20px;
@@ -369,54 +368,11 @@ button:hover {
       }
 
       .product-right{
-        padding-top: 5rem;
+        padding-top: 2rem;
+      }
+
+      .product-about{
+        width: 90%;
       }
     
     }
-
-      /*
-      margin: 10px;
-      display: grid;
-      grid-template-columns: 5.3fr;
-      grid-template-rows: 0.5fr 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "left-column"
-        "right-column";
-
-    }
-    .left-column { grid-area: left-column; }
-  
-    .right-column { grid-area: right-column; }
-    .left-column{
-          width: 100%;
-          overflow: hidden;
-        }
-        .right-column {
-          width: 100%;
-        }
-      
-        .left-column img{
-          width: 400px;
-          height: 240px;
-          left: -7%;
-          object-fit: cover;
-          overflow: hidden;
-        }
-    }
-
-    
-  
-  
-  @media (max-width: 535px) {
-    .left-column img {
-      object-fit: cover;
-      width: 320px;
-      height: 240px;
-      left: -5%;
-      top: -5%;
-      overflow: hidden;
-    }
-  }
-  */
