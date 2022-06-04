@@ -123,7 +123,7 @@
         </div>
         <input type="submit" value="Login Now" class="btn">
         <p>Forget password? <a href="#">Click here</a></p>
-        <p>Don't have an account? <a href="#">Create now</a></p>
+        <p>Don't have an account? <a href="signup.html">Create now</a></p>
     </form>
 
 </div>
@@ -131,17 +131,15 @@
 <!--Checkout-->
 
 <div class="checkout-row">
-    <div class="col-75">
-      <div class="container">
-        <form action="order-success.html">
-        
-          <div class="checkout-row">
-            <div class="col-50">
+  <div class="col-75">
+    <div class="container">
+      <form action="order-success.html">
+        <div class="checkout-row">
+          <div class="col-50">
 
 <!--Billing Address-->
 
               <h3>Shipping Address</h3>
-
               <label for="fname"><i class="fa fa-user"></i> Full Name</label>
               <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
               <label for="email"><i class="fa fa-envelope"></i> Email</label>
@@ -150,80 +148,84 @@
               <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
               <label for="city"><i class="fa fa-institution"></i> City</label>
               <input type="text" id="city" name="city" placeholder="New York" required>
-             </form>
+              
               <div class="checkout-row">
                 <div class="col-50">
                   <label for="state">State</label>
                   <input type="text" id="state" name="state" placeholder="WA" required>
                 </div>
+
                 <div class="col-50">
                   <label for="post">Postcode</label>
                   <input type="text" id="post" name="post" placeholder="6000" required>
                 </div>
               </div>
             </div>
+
   
 <!--Payment-->
-            <div class="col-50">
-              <h3>Payment</h3>
-              <label for="fname">Accepted Cards</label>
-              <div class="icon-container">
-                <i class="fa fa-cc-visa"></i>
-                <i class="fa fa-cc-amex"></i>
-                <i class="fa fa-cc-mastercard"></i>
-                <i class="fa fa-cc-discover"></i>
-              </div>
-      
-              <label for="cname">Name on Card</label>
-              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-              <label for="ccnum">Credit card number</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-              <label for="expmonth">Exp Month</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="September">
-              <div class="checkout-row">
-                <div class="col-50">
-                  <label for="expyear">Exp Year</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="2018">
-                </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352">
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Billing address same as shipping
-          </label>
-          <a href="order-success.html">
-            <input type="submit" value="Continue to checkout" class="btn">
-          </a>
-      </div>
-    </div>
 
-    <!--Order Summary cart-->
-    <div class="col-25">
-      <div class="order-summary">
-        <h4>Cart <span class="icon"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-        <p><a href="product-detail.html">Designer Bed</a> <span class="price">$1,400</span></p>
-        <br>
-        <p><a href="product-detail2.html">Artist Chair</a> <span class="price">$580</span></p>
-        <br>
-        <p><a href="#">Modern Lamp</a> <span class="price">$1,430</span></p>
-        <br>
-        <p><a href="#">Leather Sofa</a> <span class="price">$2,520</span></p>
-        <hr>
-        <h6>Subtotal<span class="price"><b>$5,930.00</b></span></h6>
-        <h6>Tax (5%) <span class="price"><b>$296.50</b></span></h6>
-        <h6>Shipping<span class="price"><b>$200.00</b></span></h6>
-        <hr>
-        <h5>Total <span class="final-price"><b>$6,399.50</b></span></h4>
-      </div>
+<div class="col-50">
+  <h3>Payment</h3>
+  <label for="fname">Accepted Cards</label>
+  <div class="icon-container">
+    <i class="fa fa-cc-visa"></i>
+    <i class="fa fa-cc-amex"></i>
+    <i class="fa fa-cc-mastercard"></i>
+    <i class="fa fa-cc-discover"></i>
+  </div>
+
+  <label for="cname">Name on Card</label>
+  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+  <label for="ccnum">Credit card number</label>
+  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+  <label for="expmonth">Exp Month</label>
+  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  <div class="checkout-row">
+    <div class="col-50">
+      <label for="expyear">Exp Year</label>
+      <input type="text" id="expyear" name="expyear" placeholder="2018">
+    </div>
+    <div class="col-50">
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="352">
     </div>
   </div>
-  
-  
+</div>
+</div>
+
+<label>
+  <input type="checkbox" checked="checked" name="sameadr"> Billing address same as shipping
+</label>
+<input type="submit" value="Continue to checkout" class="btn">
+</form>
+    </div>
+  </div>
+
+
+
+<!--Order Summary cart-->
+
+<div class="col-25">
+  <div class="order-summary">
+    <h4>Cart <span class="icon"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+    <p><a href="product-detail.html">Designer Bed</a> <span class="price">$1,400</span></p>
+    <br>
+    <p><a href="product-detail2.html">Artist Chair</a> <span class="price">$580</span></p>
+    <br>
+    <p><a href="#">Modern Lamp</a> <span class="price">$1,430</span></p>
+    <br>
+    <p><a href="#">Leather Sofa</a> <span class="price">$2,520</span></p>
+    <hr>
+    <h6>Subtotal<span class="price"><b>$5,930.00</b></span></h6>
+    <h6>Tax (5%) <span class="price"><b>$296.50</b></span></h6>
+    <h6>Shipping<span class="price"><b>$200.00</b></span></h6>
+    <hr>
+    <h5>Total <span class="final-price"><b>$6,399.50</b></span></h4>
+  </div>
+</div>
+</div>
+
 
 <!-- footer section  -->
 

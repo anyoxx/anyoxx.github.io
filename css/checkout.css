@@ -137,7 +137,6 @@ input[type="text"]{
     background-color:rgb(207 206 194);
     border-radius: 5px;
     border: none;
-    font-size: 10px;
 }
 
 input[type="text"]::placeholder{

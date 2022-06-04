@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
+    <title>order-success</title>
 
     <!-- font awesome cdn link  -->
-    <script src="https://kit.fontawesome.com/7ee5ce7b9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/signup.css"
+    <link rel="stylesheet" href="css/order-success.css">
 
 </head>
 <body>
@@ -81,7 +81,7 @@
 
     <div class="box">
         <i class="fas fa-times"></i>
-        <img src="image/populer-products/sofa2.png" alt="">
+        <img src="/image/populer-products/sofa2.png" alt="">
         <div class="content">
             <h3>Leather Sofa</h3>
             <span class="quantity"> 1 </span>
@@ -103,7 +103,7 @@
 
     <h3 class="total"> Total : <span>$6420.00</span> </h3>
 
-    <a href="cart.html" class="btn">View cart</a>
+    <a href="cart.html" class="btn">View Cart</a>
 
 </div>
 
@@ -112,12 +112,12 @@
 <div class="login-form">
 
     <form action="">
-        <h3>Login Form</h3>
+        <h3>Login form</h3>
         <input type="email" placeholder="Enter your email" class="box" required>
         <input type="password" placeholder="Enter your password" class="box" required>
-        <div class="remember">
-            <input type="checkbox" name="" id="Remember-me">
-            <label for="remember-me">Remember Me</label>
+        <div class="Remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember me</label>
         </div>
         <input type="submit" value="Login Now" class="btn">
         <p>Forget password? <a href="#">Click here</a></p>
@@ -126,46 +126,60 @@
 
 </div>
 
-<!--Signup section starts-->
-
-<form action="signup-success.html" class="sign-up">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
+<br>
+<br>
+<br>
   
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-  
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-      
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+<!--Order Success Section starts-->
 
-<!--Password requirements-->
+<section class="order">
+    <div class="form-container">
+        <form class="back"> 
+            <input type="button" value="<< Back"
+            onclick="history.go(-1)">
+        </form>
+    </div>
+<hr>
 
-      <div id="message">
-        <h3>Password must contain the following:</h3>
-        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-        <p id="number" class="invalid">A <b>number</b></p>
-        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-      </div>
-
-      <div class="clearfix">
-         <button type="submit" class="signupbtn">Sign Up</button>
-        <a href="index.html" class="cancelbtn"> Cancel </a>
-      </div>
+    <div class="break">
 
     </div>
-  </form>
+
+    <div class="order-success">
+        <h1 class="success"> Sign up success!</h1>
+    </div>
+
+    <div class="success-note">
+        <p>
+            Welcome to your new Perth Furniture Warehouse account! We hope you will enjoy it very much!
+            With your PFW profile, you will have access to:
+            <li>Weekly Newsletters</li>
+            <li>Welcome Coupon</li>
+            <li>Access to Member Exclusive Sales</li>
+        </p>
+        <p>
+            Please see our FAQ sheets for more details regarding benefits of your account.
+            If you do have any questions, don't hesitate to make a call at
+            +61 08 6377 7273 or kindly send us an email at 
+            perthfurniturewarehouse@gmail.com.
+        </p>
+       
+        <span><p> Happy browsing! :) </p></span>
+
+    </div>
+
+    <hr>
+
+<div class="shopping">
+        <a href="shop.html" class="shop-btn">Start Shopping</a>
+    </div>
+    
+</section>
+
+   
+<hr>
+
 
 
 <!-- footer section  -->
@@ -187,8 +201,8 @@
             <a href="#"> <i class="fas fa-arrow-right"></i> Help & Support</a>
             <a href="#"> <i class="fas fa-arrow-right"></i> FAQ</a>
             <a href="#"> <i class="fas fa-arrow-right"></i> Pricing</a>
-            <a href="/blog.html"> <i class="fas fa-arrow-right"></i> Blog</a>
-            <a href="/#"> <i class="fas fa-arrow-right"></i> About</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> Blog</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> About</a>
         </div>
 
         <div class="box">
@@ -204,7 +218,7 @@
 
         <div class="box">
             <h3>Newsletter</h3>
-            <p>Subscribe for latest updates</p>
+            <p>Hear about our latest updates</p>
             <form action="">
                 <input type="Email" name="" placeholder="Enter your email" id="">
                 <input type="submit" value="Subscribe" class="btn">
@@ -214,9 +228,10 @@
     </div>
 
 </section>
+</body>
+</html>
+
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
     
-</body>
-</html>
