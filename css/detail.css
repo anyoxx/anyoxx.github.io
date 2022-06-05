@@ -62,7 +62,7 @@ ul.breadcrumb li a:hover {
     grid-area: product-description; 
   }
   
-img{
+.container img{
     width: 90%;
     display: block;
 }
@@ -275,7 +275,7 @@ img{
   content: "\2212";
 }
 
-.content {
+.collapsible-content {
   padding: 0 10px;
   max-height: 0;
   overflow: hidden;

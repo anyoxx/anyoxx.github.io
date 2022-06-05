@@ -354,12 +354,14 @@ section {
 
 .shopping-cart .box img {
   height: 8rem;
+  width: max-content;
 }
 
 .shopping-cart .box .content h3 {
   color: #244d4d;
   font-size: 1.8rem;
   padding-bottom: .5rem;
+  padding-top: 0.5rem;
 }
 
 .shopping-cart .box .content span {

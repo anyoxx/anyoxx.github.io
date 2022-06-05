@@ -144,9 +144,9 @@ input[type="text"]::placeholder{
     color: #81857d;
 }
 
-.btn {
-    color: rgb(178 162 139);
-    background-color: #fff;
+.container .btn {
+    color: #fff;
+    background-color: rgb(181 119 76);
     font-weight: 500;
     height: 50px;
     padding: 12px;

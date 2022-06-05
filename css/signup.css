@@ -50,6 +50,14 @@ input[type=text], input[type=password] {
       color: #3a4731;
   }
   
+.privacy-statement a{
+    color: rgb(179, 92, 61);
+
+  }
+
+  .container a:hover{
+    text-decoration: underline;
+  }
   /* Button styling */
 button {
     background-color: rgb(100, 120, 91);
